@@ -1,7 +1,7 @@
 ---
 
-- name: stop myapp service
+- name: start myapp service
   systemd:
     name: myapp
-    state: stopped
-  ignore_errors: true
+    state: started
+

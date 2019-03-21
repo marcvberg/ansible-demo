@@ -5,4 +5,5 @@
   roles:
   - install_application
   - copy_dictionary
+  - create_service
   - start_service

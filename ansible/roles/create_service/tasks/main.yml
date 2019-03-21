@@ -10,7 +10,7 @@
     src: my_app.j2
     dest: /lib/systemd/system/myapp.service
     owner: root
-    group: wheel
+    group: root
     mode: 0644
 
 - name: reload service defintions
