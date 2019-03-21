@@ -18,7 +18,7 @@ public class Dictionary {
     {
         ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
         try{
-            definitions = mapper.readValue(new File("definitions.yml"), HashMap.class);
+            definitions = mapper.readValue(new File("config/definitions.yml"), HashMap.class);
         } catch(Exception e) {
             e.printStackTrace();
         }
