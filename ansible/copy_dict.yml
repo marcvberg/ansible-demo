@@ -1,0 +1,6 @@
+---
+
+- name: Copy the dictionary
+  hosts: test
+  roles:
+  - copy_dictionary

@@ -1,0 +1,7 @@
+---
+
+- name: Create templated definitions
+  template:
+    src: definitions.j2
+    dest: "{{ install_path }}/config/definitions.yml"
+    owner: ubuntu

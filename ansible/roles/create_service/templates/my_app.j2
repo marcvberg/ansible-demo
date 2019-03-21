@@ -1,0 +1,13 @@
+[Unit]
+Description=Demo Application
+
+[Service]
+ExecStart={{ install_path }}/runapp.sh
+WorkingDirectory={{ install_path }}
+Type=simple
+User=ubuntu
+Group=wheel
+
+
+[Install]
+WantedBy=multi-user.target

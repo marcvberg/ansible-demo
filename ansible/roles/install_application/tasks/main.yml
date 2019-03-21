@@ -1,0 +1,38 @@
+---
+
+- name: install boto3
+  pip:
+    name: boto3
+
+- name: create apps dir
+  file:
+    path: "/apps"
+    owner: root
+    group: root
+    mode: 0755
+    recurse: true
+    state: directory
+
+- name: create install directory
+  file:
+    path: "{{ install_path }}"
+    owner: secuser
+    group: secuser
+    mode: 0755
+    recurse: true
+    state: directory
+
+- name: create config dir
+  file:
+    path: "{{ install_path }}/config"
+    owner: secuser
+    group: secuser
+    mode: 0755
+    recurse: true
+    state: directory
+
+- name: get application
+  storage:
+    bucket: marc-ansible-demo
+    file: "ansible-{{ version }}.jar"
+    dest: "{{ install_path }}/app.jar"

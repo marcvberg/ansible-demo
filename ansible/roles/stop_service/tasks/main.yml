@@ -1,0 +1,6 @@
+---
+
+- name: start myapp service
+  systemd:
+    name: myapp
+    state: started

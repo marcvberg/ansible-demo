@@ -1,0 +1,6 @@
+---
+
+- name: Build the dictionary
+  hosts: test
+  roles:
+  - create_dictionary

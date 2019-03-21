@@ -1,0 +1,19 @@
+---
+
+- name: create start script
+  template:
+    src: runapp.j2
+    dest: "{{ install_path }}/runapp.sh"
+
+- name: create system service
+  template:
+    src: my_app.j2
+    dest: /lib/systemd/system/myapp.service
+    owner: root
+    group: wheel
+    mode: 0644
+
+- name: reload service defintions
+  systemd:
+    daemon_reload: true
+    name: myapp

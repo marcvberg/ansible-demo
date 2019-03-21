@@ -1,0 +1,8 @@
+---
+
+- name: Install the application
+  hosts: test
+  roles:
+  - install_application
+  - copy_dictionary
+  - start_service

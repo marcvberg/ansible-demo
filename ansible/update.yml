@@ -1,0 +1,9 @@
+---
+
+- name: Update the application
+  hosts: test
+  roles:
+  - stop_service
+  - install_application
+  - create_dictionary
+  - start_service

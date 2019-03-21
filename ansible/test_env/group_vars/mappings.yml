@@ -1,0 +1,11 @@
+---
+
+mappings:
+  - key: from
+    value: preposition
+  - key: Michigan
+    value: USA
+  - key: major
+    value: malfunction
+  - key: Gary,IN
+    value: None

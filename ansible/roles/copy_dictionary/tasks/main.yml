@@ -1,0 +1,7 @@
+---
+
+- name: Copy Premade definitions
+  copy:
+    src: definitions.yml
+    dest: "{{ install_path }}/config/definitions.yml"
+    owner: ubuntu
