@@ -1,0 +1,4 @@
+*.iml
+ansible-app/.idea/**
+ansible-app/target/**
+*.DS_Store
